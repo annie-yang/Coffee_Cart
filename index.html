@@ -6,6 +6,9 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 		<script type="text/javascript" src="js/materialize.min.js"></script>
@@ -28,18 +31,23 @@
 
 	<body>
 		<!-- start of nav-->
-		<div class="navbar-fixed">
-			<nav class="z-depth-0">
-				<div class="nav-wrapper">
-					<a href="#!" class="brand-logo">Coffee Cart</a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="#">How to order</a></li>
-						<li><a href="#">Admin</a></li>
-						<li><a href="#">About</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div> <!-- END of nav -->
+		<nav class="z-depth-0">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">Coffee Cart</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#">How to order</a></li>
+					<li><a href="#">Admin</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="#">How to order</a></li>
+					<li><a href="#">Admin</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- END of nav -->
 		<br>
 
 		<!-- start of div -->
@@ -177,6 +185,10 @@
 		<script>
 			$(document).ready(function(){
 				$('.modal').modal();
+			});
+
+			$(document).ready(function(){
+				$(".button-collapse").sideNav();
 			});
 		</script> <!-- END of script -->
 	</body> <!-- END of body -->

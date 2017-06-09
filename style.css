@@ -50,3 +50,25 @@ img{
 .question{
 	font-size: 1.5em;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+	img{
+		height:100%;
+		width:100%;
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+	img{
+		height:100%;
+		width:100%;
+	}
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+	img{
+		height:100%;
+		width:100%;
+	}
+}
